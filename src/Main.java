@@ -1,7 +1,10 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import View.ConsoleView;
+import Controller.CreditCalculatorController;
 public class Main {
     public static void main(String[] args) {
+        ConsoleView view = new ConsoleView();
+        CreditCalculatorController controller = new CreditCalculatorController(view);
+        controller.start();
 
     }
 }
